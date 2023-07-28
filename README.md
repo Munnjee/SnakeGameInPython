@@ -18,7 +18,11 @@ The `food.py` module contains the `Food` class, responsible for managing the foo
 
 ### scoreboard.py
 
-The `scoreboard.py` module contains the `Scoreboard` class, which handles the game's scoring and display. It keeps track of the player's score and provides methods to increment the score when the snake eats food, as well as display the score and game over message when the game ends.
+The `scoreboard.py` module contains the `Scoreboard` class, which handles the game's scoring and display. It keeps track of the player's current game score and their high score that is saved to the `data.txt` file.
+
+### data.txt
+
+Stores the players high score as a text file that can be retrieved when player plays the game. 
 
 This modular organization allows for better code maintainability and separation of concerns.
 
@@ -34,7 +38,7 @@ To play the Snake Game, follow these steps:
 ``` python main.py ```
 5. You can control the snake's movement using the arrow keys (up, down, left, right).
 6. The goal is to guide the snake to eat as much food as possible without colliding with the walls or its own tail. 
-7. The game ends when a collision occurs, and the score is displayed along with a game over message.
+7. The game ends when a collision occurs, and the game restarts for the player to try again.
 
 
 Feel free to explore and modify the code to enhance the game or add new features! Enjoy playing!
